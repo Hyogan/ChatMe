@@ -1,0 +1,13 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build" : "npx tailwindcss -i ./style.css -o ./css/style.css",
+    "watch" : "npx tailwindcss -i ./style.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
