@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Chatty | realtime chat app</title>
+    </head>
+    <body class="flex justify-center items-center min-h-[100vh] bg-veryDarkBlue">
+        <main class="flex flex-col bg-white w-[97%] min-h-2/5 rounded-lg sm:flex-row sm:min-h-3/5 md:w-[75%] lg:w-[70%]:">
+            <section class="hero text-3xl flex justify-center items-center min-h-[150px] w-full bg-darkBlue py-5 sm:min-h-full sm:w-1/2 sm:p-0 text-white" >
+                Welcome back to Chatty !
+            </section>
+            <section class="signInForm min-w-1/2 min-h-full">
+                <div class="error-msg text-veryDarkBlue bg-paleRed w-[90%] mx-[5%]  py-2 flex justify-center rounded-lg lg:mx-[20%] lg:w-1/2">This is an error message !</div>
+                <form action="" class="flex flex-col ml-[20px] flex justify-center items-center w-full sm:justify-start sm:items-start">
+                    
+                  
+                    <div class="field flex  w-[70%] my-2">
+                        <!-- <label for="email">Email Adress</label> -->
+                        <input required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="field flex  w-[70%] my-2">
+                        <!-- <label for="password">Password</label> -->
+                        <input required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="password" name="password" placeholder="Enter a password">
+                    </div>
+                   
+                    <div class="field flex flex-col w-1/2 mt-2">
+                        <button type="submit" class="flex bg-veryDarkBlue rounded-md justify-center items-center text-white px-5 py-2 transition duration-150 hover:bg-darkBlue-900">Continue to chat !</button>
+                    </div>
+                </form>
+                <div class="link ml-10 text-red mt-2">Not have an account? <a href="index.html" class="text-blue underline">Sign up now</a></div>
+            </section>
+        </main>
+    </body>
+</html>
