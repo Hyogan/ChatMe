@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <meta http-equiv="refresh" content="10;http://localhost:1000/" /> -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <title>Chatty | realtime chat app</title>
     </head>
     <body class="flex justify-center items-center min-h-[100vh] bg-veryDarkBlue pt-5">
         <!-- <main class="flex flex-col flex-row shadow-2xl bg-white w-[97%] min-h-2/5 rounded-lg sm:min-h-3/5 md:w-[35%] lg:w-[70%]:"> -->
-        <main class="flex flex-col flex-row bg-white w-[97%] min-h-2/5 rounded-lg sm:min-h-3/5 md:w-[25%] lg:w-[70%]:">
+        <main class="flex flex-col flex-row bg-white w-[97%] min-h-2/5 rounded-lg sm:min-h-3/5 md:w-[35%] lg:w-[70%]:">
            
             <!-- Styling the header containing some informations about users like name, surname status -->
 
@@ -26,14 +27,15 @@
             </header>
 
             <!-- Search section -->
-            <section class="flex justify-center items-center w-full pt-2 pb-2">
-                <input type="search" name="searchUser" placeholder="Enter name to search..." class="w-2/3 rounded-l-md pl-2 h-[40px] border border-gray-400">
-                <button class="px-4 h-[40px] bg-veryDarkBlue text-white rounded-r-md">S</button>
+            <section class="search flex justify-center items-center w-full pt-2 pb-2 mt-2 relative">
+                <span class="font-sm">Select an user to start a chat</span>
+                <input type="search" name="searchUser" placeholder="Enter name to search..." class="absolute transition ease duration-300 pointer-events-none opacity-0 w-2/3 rounded-l-md pl-2 h-[40px] border border-gray-400">
+                <button class="absolute right-10 h-[40px] w-[40px] bg-white text-veryDarkBlue rounded-r-md flex justify-center items-center"><i class="w-full h-full fas fa-search mt-7"></i></button>
             </section>
 
             <!-- List of an users contacts -->
             <section class="flex flex-col w-full max-h-[350px] overflow-auto user-list">
-                <!-- User item informations -->
+                <!-- User item informations --> 
                 <article class="users flex justify-between items-center w-full px-5 py-2 mb-2">
                     <div class="h-2/3 flex align-center">
                         <img src="images/A.png" alt="Profile pic" class="w-[46px] height-[40px] rounded-full mr-3">
@@ -48,5 +50,6 @@
 
             
         </main>  
+        <script src="js/users.js"></script>
     </body>
 </html>

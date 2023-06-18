@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
         <title>Chatty | realtime chat app</title>
     </head>
     <body class="flex justify-center items-center min-h-[100vh] bg-veryDarkBlue">
@@ -13,8 +15,8 @@
                 Welcome to Chatty !
             </section>
             <section class="signInForm min-w-1/2 min-h-full">
-                <div class="error-msg text-veryDarkBlue bg-paleRed w-[90%] mx-[5%]  py-2 flex justify-center rounded-lg lg:mx-[20%] lg:w-1/2">This is an error message !</div>
-                <form action="" class="flex flex-col ml-[20px] flex justify-center items-center w-full sm:justify-start sm:items-start">
+                <div class="error-msg text-veryDarkBlue bg-paleRed w-[90%] mx-[5%]  py-2 flex justify-center rounded-lg lg:mx-[20%] lg:w-1/2 hidden">This is an error message !</div>
+                <form action="" class="flex flex-col ml-[20px] flex justify-center items-center w-full sm:justify-start sm:items-start mt-8">
                     <div class="field flex w-[70%] my-2">
                         <!-- <label for="firstName" class="me-2">First Name</label> -->
                         <input required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="text" name="firstName" placeholder="First Name">
@@ -27,9 +29,10 @@
                         <!-- <label for="email">Email Adress</label> -->
                         <input required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="email" name="email" placeholder="Email">
                     </div>
-                    <div class="field flex  w-[70%] my-2">
+                    <div class="field flex relative w-[70%] my-2">
                         <!-- <label for="password">Password</label> -->
-                        <input required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="password" name="password" placeholder="Enter a password">
+                        <input id="password" required class="border-b-2 w-full border-veryDarkBlue my-1 focus:outline-none focus:px-5" type="password" name="password" placeholder="Enter a password">
+                        <i class="toggleBtn cursor-pointer fas fa-eye"></i>
                     </div>
                     <div class="field flex  w-[70%] my-2">
                         <!-- <label for="confirm_password">Confirm your password</label> -->
@@ -43,8 +46,10 @@
                         <button type="submit" class="flex bg-veryDarkBlue rounded-md justify-center items-center text-white px-5 py-2 transition duration-1000 hover:bg-darkBlue">Continue to chat !</button>
                     </div>
                 </form>
-                <div class="link ml-10 text-red mt-2">already sign up ? <a href="login.html" class="text-blue underline">Login now</a></div>
+                <div class="link ml-10 text-red mt-2">already sign up ? <a href="login.html" class="text-veryDarkBlue no-underline hover:underline ">Login now</a></div>
             </section>
         </main>
+
+        <script src="js/pass-toggle.js"></script>
     </body>
 </html>

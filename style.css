@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+form .field i.toggleBtn.active::before{
+    content: "\f070";
+    color: #333;
+}
+form .field i.toggleBtn{
+    color: #ccc;
+    top: 70%;
+}
+
+.search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search button.active{
+    color: #fff;
+    background: #333;
+}
+.search button.active i::before{
+    content: "\f00d";
+
+}
